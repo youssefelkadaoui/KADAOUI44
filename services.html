@@ -78,48 +78,45 @@
                 <p>اترك رسالتك وسأتواصل معك في أقرب وقت</p>
             </div>
             <div class="consult-box">
-                <form id="contactForm">
+                <form action="https://formsubmit.co/youssefelkadaoui981@gmail.com" method="POST" id="contactForm">
                     <div class="form-row">
                         <div class="form-group">
-                            <input type="text" name="name" id="name" placeholder="الاسم الكامل" required>
+                            <input type="text" name="name" placeholder="الاسم الكامل" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" name="email" id="email" placeholder="البريد الإلكتروني" required>
+                            <input type="email" name="email" placeholder="البريد الإلكتروني" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
-                            <input type="text" name="phone" id="phone" placeholder="رقم الهاتف (اختياري)">
+                            <input type="text" name="phone" placeholder="رقم الهاتف (اختياري)">
                         </div>
                         <div class="form-group">
-                            <select name="service" id="service">
+                            <select name="service">
                                 <option value="">اختر الخدمة</option>
-                                <option value="graphic">التصميم الجرافيكي</option>
-                                <option value="montage">المونتاج</option>
-                                <option value="computer">حلول تقنية الحاسوب</option>
-                                <option value="mobile">حلول الهواتف النقالة</option>
-                                <option value="system">تعديل الأنظمة</option>
-                                <option value="web">برمجة المواقع</option>
-                                <option value="other">أخرى</option>
+                                <option value="التصميم الجرافيكي">التصميم الجرافيكي</option>
+                                <option value="المونتاج">المونتاج</option>
+                                <option value="حلول تقنية الحاسوب">حلول تقنية الحاسوب</option>
+                                <option value="حلول الهواتف النقالة">حلول الهواتف النقالة</option>
+                                <option value="تعديل الأنظمة">تعديل الأنظمة</option>
+                                <option value="برمجة المواقع">برمجة المواقع</option>
+                                <option value="أخرى">أخرى</option>
                             </select>
                         </div>
                     </div>
                     <div class="form-group">
-                        <textarea name="message" id="message" placeholder="اكتب رسالتك هنا..." required></textarea>
+                        <textarea name="message" placeholder="اكتب رسالتك هنا..." required></textarea>
                     </div>
                     <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_subject" value="استشارة من 44">
+                    <input type="hidden" name="_subject" value="رسالة جديدة من 44">
                     <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="https://youssefelkadaoui981.github.io/44/services.html?success=true">
+                    <input type="hidden" name="_autoresponse" value="شكراً لتواصلك! سأرد عليك في أقرب وقت ممكن">
                     <button type="submit" class="btn btn-primary submit-btn">
                         <span>إرسال الرسالة</span>
                         <i class="fas fa-paper-plane"></i>
                     </button>
                 </form>
-                <div class="form-success" id="formSuccess">
-                    <i class="fas fa-check-circle"></i>
-                    <h3>تم الإرسال بنجاح!</h3>
-                    <p>شكراً لتواصلك، سأرد عليك في أقرب وقت ممكن</p>
-                </div>
             </div>
         </div>
     </section>
