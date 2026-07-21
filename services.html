@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدماتنا - 44</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">4<span>4</span></a>
+            <button class="nav-toggle" id="navToggle" aria-label="القائمة">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav" id="nav">
+                <a href="index.html">الرئيسية</a>
+                <a href="about.html">من أنا</a>
+                <a href="services.html" class="active">خدماتنا</a>
+                <a href="contact.html">تواصل معي</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="bg-tech" id="bgTech"></div>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <section class="page-hero">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="container">
+            <h1>خدماتنا</h1>
+            <p>ماذا يمكنني أن أقدم لك؟</p>
+        </div>
+    </section>
+
+    <section class="container services-wrap">
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-palette"></i></div>
+                <h3>التصميم الجرافيكي</h3>
+                <p>تصميم الشعارات، الهويات البصرية، البوسترات، والمواد الإعلانية.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-video"></i></div>
+                <h3>المونتاج</h3>
+                <p>مونتاج الفيديوهات، الموشن جرافيك، وإضافة المؤثرات الإبداعية.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-laptop"></i></div>
+                <h3>حلول تقنية الحاسوب</h3>
+                <p>صيانة الحواسيب، تحسين الأداء، حل مشاكل النظام، واستعادة البيانات.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-mobile-screen"></i></div>
+                <h3>حلول الهواتف النقالة</h3>
+                <p>صيانة البرمجيات، حل مشاكل الأجهزة، وتحسين الأداء.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-gears"></i></div>
+                <h3>تعديل الأنظمة</h3>
+                <p>تثبيت وتعديل أنظمة التشغيل وتهيئة البيئات البرمجية.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-code"></i></div>
+                <h3>برمجة المواقع</h3>
+                <p>تطوير مواقع ويب حديثة، متجاوبة، وسريعة بأحدث التقنيات.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="consult-section" id="consultation">
+        <div class="container">
+            <div class="section-head">
+                <h2>استشارة مجانية</h2>
+                <p>اترك رسالتك وسأتواصل معك في أقرب وقت</p>
+            </div>
+            <div class="consult-box">
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" placeholder="الاسم الكامل" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" placeholder="البريد الإلكتروني" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" name="phone" id="phone" placeholder="رقم الهاتف (اختياري)">
+                        </div>
+                        <div class="form-group">
+                            <select name="service" id="service">
+                                <option value="">اختر الخدمة</option>
+                                <option value="graphic">التصميم الجرافيكي</option>
+                                <option value="montage">المونتاج</option>
+                                <option value="computer">حلول تقنية الحاسوب</option>
+                                <option value="mobile">حلول الهواتف النقالة</option>
+                                <option value="system">تعديل الأنظمة</option>
+                                <option value="web">برمجة المواقع</option>
+                                <option value="other">أخرى</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" placeholder="اكتب رسالتك هنا..." required></textarea>
+                    </div>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="استشارة من 44">
+                    <input type="hidden" name="_template" value="table">
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        <span>إرسال الرسالة</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+                <div class="form-success" id="formSuccess">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>تم الإرسال بنجاح!</h3>
+                    <p>شكراً لتواصلك، سأرد عليك في أقرب وقت ممكن</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p class="footer-copy">&copy; 2026 Youssef Kadaoui — <strong>44</strong></p>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/youssef__kadaoui" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/212609236744" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:youssefelkadaoui981@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-top" id="backTop" aria-label="العودة للأعلى"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
