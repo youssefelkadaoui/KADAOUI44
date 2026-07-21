@@ -177,52 +177,16 @@ statNums.forEach(el => {
     obs.observe(el);
 });
 
-// ===== CONTACT FORM =====
-const form = document.getElementById('contactForm');
-const success = document.getElementById('formSuccess');
-
-if (form) {
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-
-        const btn = this.querySelector('.submit-btn');
-        const orig = btn.innerHTML;
-        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> جاري الإرسال...';
-        btn.disabled = true;
-
-        const data = new FormData(this);
-
-        fetch('https://formsubmit.co/ajax/youssefelkadaoui981@gmail.com', {
-            method: 'POST',
-            body: data
-        })
-        .then(r => r.json())
-        .then(res => {
-            if (res.success) {
-                form.style.display = 'none';
-                success.classList.add('active');
-            } else {
-                alert('حدث خطأ، حاول مرة أخرى.');
-            }
-        })
-        .catch(() => {
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const msg = document.getElementById('message').value;
-            const sv = document.getElementById('service');
-            const stxt = sv && sv.value
-                ? sv.options[sv.selectedIndex].text
-                : 'غير محدد';
-
-            const body = `الاسم: ${name}%0Aالإيميل: ${email}%0Aالخدمة: ${stxt}%0A%0Aالرسالة:%0A${msg}`;
-            window.location.href = 'mailto:youssefelkadaoui981@gmail.com?subject=استشارة من 44&body=' + body;
-
-            form.style.display = 'none';
-            success.classList.add('active');
-        })
-        .finally(() => {
-            btn.innerHTML = orig;
-            btn.disabled = false;
-        });
-    });
+// ===== FORM SUCCESS DETECTION =====
+if (window.location.search.includes('success=true')) {
+    const form = document.getElementById('contactForm');
+    const consultBox = document.querySelector('.consult-box');
+    if (form) form.style.display = 'none';
+    if (consultBox) {
+        const msg = document.createElement('div');
+        msg.className = 'form-success active';
+        msg.innerHTML = '<i class="fas fa-check-circle"></i><h3>تم الإرسال بنجاح!</h3><p>شكراً لتواصلك، سأرد عليك في أقرب وقت ممكن</p>';
+        consultBox.appendChild(msg);
+    }
 }
+
