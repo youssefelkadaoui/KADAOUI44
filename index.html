@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>44 — يوسف القضاوي | عالم رقمي متكامل</title>
+    <meta name="description" content="يوسف القضاوي (44) — مطوّر مواقع، مصمم جرافيك، وخبير حلول تقنية. تصميم، برمجة، مونتاج وحلول رقمية احترافية.">
+    <meta name="theme-color" content="#04070e">
+    <meta property="og:title" content="44 — يوسف القضاوي | عالم رقمي متكامل">
+    <meta property="og:description" content="من الفكرة إلى تجربة رقمية متكاملة: تطوير مواقع، هويات بصرية، مونتاج وحلول تقنية احترافية.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <noscript><style>.reveal{opacity:1;transform:none}.boot{display:none}</style></noscript>
+</head>
+<body>
+
+    <!-- Boot screen -->
+    <div class="boot" aria-hidden="true">
+        <div class="boot-inner">
+            <span class="boot-logo">44</span>
+            <span class="boot-bar"><i></i></span>
+            <span class="boot-txt">ENTERING THE DIGITAL WORLD</span>
+        </div>
+    </div>
+
+    <a class="skip" href="#main">تخطَّ إلى المحتوى</a>
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <canvas id="fx" aria-hidden="true"></canvas>
+
+            <!-- Language gate -->
+    <div class="lang-gate hidden" id="langGate" role="dialog" aria-modal="true" aria-labelledby="langGateTitle">
+        <div class="lang-gate-card">
+            <span class="logo-mark">44</span>
+            <p class="lang-gate-kicker">WELCOME TO THE DIGITAL WORLD</p>
+            <h2 id="langGateTitle">اختر لغتك <span>/ Choose your language</span></h2>
+            <p class="lang-gate-hint">يمكنك تغيير اللغة في أي وقت من أعلى الموقع.</p>
+            <div class="lang-options">
+                <a class="lang-opt" href="index.html" data-lang="ar">
+                    <i class="fas fa-globe"></i>
+                    <b>العربية</b>
+                    <span>Arabic</span>
+                </a>
+                <a class="lang-opt" href="en/index.html" data-lang="en">
+                    <i class="fas fa-globe"></i>
+                    <b>English</b>
+                    <span>الإنجليزية</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== TOP SOCIAL BAR ===== -->
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <div class="status"><span class="dot"></span> متاح لاستقبال مشاريع جديدة</div>
+            <div class="top-social">
+                <a class="ts ts-ig" href="https://www.instagram.com/youssef__kadaoui" target="_blank" rel="noopener" aria-label="إنستغرام">
+                    <span class="ts-icon"><i class="fab fa-instagram"></i></span>
+                    <span class="ts-label">@youssef__kadaoui</span>
+                </a>
+                <a class="ts ts-mail" href="mailto:youssefelkadaoui981@gmail.com" aria-label="البريد الإلكتروني">
+                    <span class="ts-icon"><i class="fas fa-envelope"></i></span>
+                    <span class="ts-label">youssefelkadaoui981@gmail.com</span>
+                </a>
+                <a class="ts ts-wa" href="https://wa.me/212609236744" target="_blank" rel="noopener" aria-label="واتساب">
+                    <span class="ts-icon"><i class="fab fa-whatsapp"></i></span>
+                    <span class="ts-label">+212 609 236 744</span>
+                </a>
+                <a class="ts ts-tt" href="https://www.tiktok.com/@kdyoussef88" target="_blank" rel="noopener" aria-label="تيك توك">
+                    <span class="ts-icon"><i class="fab fa-tiktok"></i></span>
+                    <span class="ts-label">@kdyoussef88</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo" aria-label="44 — الصفحة الرئيسية">
+                <span class="logo-mark">44</span>
+                <span class="logo-text"><b>Youssef Kadaoui</b><i>Digital Creator</i></span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav" id="nav">
+                <a href="index.html" class="active">الرئيسية</a>
+                <a href="about.html">من أنا</a>
+                <a href="services.html">الخدمات</a>
+                <a href="portfolio.html">أعمالي</a>
+                <a href="contact.html">تواصل</a>
+                <a href="services.html#consultation" class="nav-cta">اطلب خدمة</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!-- ===== HERO ===== -->
+        <section class="hero">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <span class="eyebrow">مرحباً بك في عالم 44 الرقمي</span>
+                    <h1>أحوّل أفكارك إلى <span class="grad">تجربة رقمية</span> تُبهر الجميع</h1>
+                    <div class="hero-role">
+                        <span>أنا يوسف القضاوي —</span>
+                        <span class="typed" id="typed">مطوّر مواقع</span>
+                        <span class="cursor" aria-hidden="true"></span>
+                    </div>
+                    <p class="lead">
+                        مطوّر ويب، مصمم جرافيك، وخبير حلول تقنية. أصنع مواقع سريعة، هويات بصرية قوية،
+                        ومحتوى مرئي احترافي، وأرافقك من أول فكرة إلى إطلاق المشروع.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="services.html" class="btn btn-primary">استكشف الخدمات <i class="fas fa-arrow-left"></i></a>
+                    </div>
+                    <div class="hero-mini">
+                        <div><b>+5</b><span>سنوات خبرة</span></div>
+                        <div><b>+80</b><span>مشروع منجز</span></div>
+                        <div><b>24/7</b><span>دعم وتواصل</span></div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="photo-glow"></div>
+                    <div class="photo-frame">
+                        <div class="photo-inner">
+                            <img src="assets/photo.jpg" alt="يوسف القضاوي — 44">
+                        </div>
+                        <div class="photo-social" aria-label="تواصل مباشر">
+                            <a class="ps-ig" href="https://www.instagram.com/youssef__kadaoui" target="_blank" rel="noopener" aria-label="إنستغرام" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a class="ps-mail" href="mailto:youssefelkadaoui981@gmail.com" aria-label="البريد الإلكتروني" title="Email"><i class="fas fa-envelope"></i></a>
+                            <a class="ps-wa" href="https://wa.me/212609236744" target="_blank" rel="noopener" aria-label="واتساب" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                            <a class="ps-tt" href="https://www.tiktok.com/@kdyoussef88" target="_blank" rel="noopener" aria-label="تيك توك" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                    <span class="tag-float tag-1"><i class="fas fa-code"></i> Web Development</span>
+                    <span class="tag-float tag-2"><i class="fas fa-palette"></i> Graphic Design</span>
+                    <span class="tag-float tag-3"><i class="fas fa-shield-halved"></i> Tech Solutions</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== MARQUEE ===== -->
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee-track">
+                <span><i class="fab fa-html5"></i> HTML5</span>
+                <span><i class="fab fa-css3-alt"></i> CSS3</span>
+                <span><i class="fab fa-js"></i> JavaScript</span>
+                <span><i class="fas fa-mobile-screen"></i> Responsive Design</span>
+                <span><i class="fab fa-figma"></i> UI / UX</span>
+                <span><i class="fas fa-wand-magic-sparkles"></i> Motion Graphics</span>
+                <span><i class="fab fa-adobe"></i> Creative Suite</span>
+                <span><i class="fas fa-magnifying-glass-chart"></i> SEO</span>
+                <span><i class="fas fa-shield-halved"></i> Cyber Security</span>
+                <span><i class="fas fa-server"></i> Tech Support</span>
+                <span><i class="fab fa-html5"></i> HTML5</span>
+                <span><i class="fab fa-css3-alt"></i> CSS3</span>
+                <span><i class="fab fa-js"></i> JavaScript</span>
+                <span><i class="fas fa-mobile-screen"></i> Responsive Design</span>
+                <span><i class="fab fa-figma"></i> UI / UX</span>
+                <span><i class="fas fa-wand-magic-sparkles"></i> Motion Graphics</span>
+                <span><i class="fab fa-adobe"></i> Creative Suite</span>
+                <span><i class="fas fa-magnifying-glass-chart"></i> SEO</span>
+                <span><i class="fas fa-shield-halved"></i> Cyber Security</span>
+                <span><i class="fas fa-server"></i> Tech Support</span>
+            </div>
+        </div>
+
+        <!-- ===== SERVICES ===== -->
+        <section class="section" id="services">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">خدمات 44</span>
+                    <h2>كل ما تحتاجه علامتك في مكان واحد</h2>
+                    <p>مجموعة حلول رقمية وتقنية متكاملة، مصممة بعناية لتناسب أهدافك وميزانيتك.</p>
+                </div>
+
+                <div class="services-grid">
+                    <article class="card service-card reveal tilt">
+                        <span class="num">01</span>
+                        <div class="icon-box"><i class="fas fa-code"></i></div>
+                        <h3>تطوير المواقع</h3>
+                        <p>مواقع سريعة، متجاوبة وآمنة، مبنية بأحدث التقنيات وبواجهات استخدام عصرية.</p>
+                        <a href="services.html#web" class="link-arrow">اعرف المزيد <i class="fas fa-arrow-left"></i></a>
+                    </article>
+
+                    <article class="card service-card reveal tilt">
+                        <span class="num">02</span>
+                        <div class="icon-box"><i class="fas fa-palette"></i></div>
+                        <h3>الهوية والتصميم الجرافيكي</h3>
+                        <p>شعارات، هويات بصرية، بوسترات وتصاميم سوشيال ميديا تعبّر عن شخصية علامتك.</p>
+                        <a href="services.html#design" class="link-arrow">اعرف المزيد <i class="fas fa-arrow-left"></i></a>
+                    </article>
+
+                    <article class="card service-card reveal tilt">
+                        <span class="num">03</span>
+                        <div class="icon-box"><i class="fas fa-video"></i></div>
+                        <h3>المونتاج والمحتوى المرئي</h3>
+                        <p>مونتاج احترافي، موشن جرافيك، وتصحيح ألوان لمحتوى يجذب الانتباه من الثانية الأولى.</p>
+                        <a href="services.html#video" class="link-arrow">اعرف المزيد <i class="fas fa-arrow-left"></i></a>
+                    </article>
+
+                    <article class="card service-card reveal tilt">
+                        <span class="num">04</span>
+                        <div class="icon-box"><i class="fas fa-laptop-medical"></i></div>
+                        <h3>حلول تقنية للحاسوب</h3>
+                        <p>صيانة، تحسين الأداء، حل مشاكل النظام، واستعادة البيانات بأسرع وقت وأقل تكلفة.</p>
+                        <a href="services.html#tech" class="link-arrow">اعرف المزيد <i class="fas fa-arrow-left"></i></a>
+                    </article>
+
+                    <article class="card service-card reveal tilt">
+                        <span class="num">05</span>
+                        <div class="icon-box"><i class="fas fa-mobile-screen-button"></i></div>
+                        <h3>حلول الهواتف النقالة</h3>
+                        <p>حل مشاكل البرمجيات، تسريع الأجهزة، ونقل البيانات بأمان دون فقدان أي ملف.</p>
+                        <a href="services.html#mobile" class="link-arrow">اعرف المزيد <i class="fas fa-arrow-left"></i></a>
+                    </article>
+
+                    <article class="card service-card reveal tilt">
+                        <span class="num">06</span>
+                        <div class="icon-box"><i class="fas fa-gears"></i></div>
+                        <h3>الأنظمة والأمن الرقمي</h3>
+                        <p>تثبيت وتخصيص أنظمة التشغيل، تهيئة بيئات العمل، وحماية بياناتك بنسخ احتياطية آمنة.</p>
+                        <a href="services.html#systems" class="link-arrow">اعرف المزيد <i class="fas fa-arrow-left"></i></a>
+                    </article>
+                </div>
+
+                <div class="section-foot">
+                    <a href="services.html" class="btn btn-ghost">كل الخدمات والتفاصيل <i class="fas fa-arrow-left"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== WHY 44 ===== -->
+        <section class="section section-alt" id="why">
+            <div class="container">
+                <div class="split">
+                    <div class="reveal">
+                        <span class="eyebrow">لماذا تختار 44؟</span>
+                        <h2 style="font-size:clamp(1.5rem,3vw,2.1rem);font-weight:900;line-height:1.4;margin-bottom:14px;">
+                            شريك رقمي واحد، <span class="grad">رؤية متكاملة</span>
+                        </h2>
+                        <p style="color:var(--muted);font-size:.96rem;">
+                            لا تحتاج إلى التنسيق بين عدة جهات. من التصميم إلى البرمجة إلى الدعم التقني،
+                            كل شيء يتم تحت سقف واحد وبمعايير احترافية.
+                        </p>
+                        <ul class="check-list">
+                            <li><i class="fas fa-check"></i> تواصل مباشر وسريع مع صاحب المشروع</li>
+                            <li><i class="fas fa-check"></i> تسليم في الوقت المحدد دون مفاجآت</li>
+                            <li><i class="fas fa-check"></i> تصميم يراعي الهوية والجمهور المستهدف</li>
+                            <li><i class="fas fa-check"></i> دعم ومتابعة بعد التسليم</li>
+                        </ul>
+                        <div class="hero-actions" style="margin-top:26px;margin-bottom:0;">
+                            <a href="contact.html" class="btn btn-primary">لنبدأ مشروعك <i class="fas fa-arrow-left"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="feature-grid">
+                        <div class="card feature reveal">
+                            <i class="fas fa-bolt"></i>
+                            <h3>سرعة الأداء</h3>
+                            <p>مواقع خفيفة تُحمّل في ثوانٍ وتعمل بسلاسة على كل الأجهزة.</p>
+                        </div>
+                        <div class="card feature reveal">
+                            <i class="fas fa-mobile-screen"></i>
+                            <h3>تصميم متجاوب</h3>
+                            <p>تجربة مثالية من شاشة الهاتف إلى شاشة الحاسوب الكبيرة.</p>
+                        </div>
+                        <div class="card feature reveal">
+                            <i class="fas fa-magnifying-glass-chart"></i>
+                            <h3>جاهز لمحركات البحث</h3>
+                            <p>بنية نظيفة وأساسيات SEO تساعدك على الظهور أمام جمهورك.</p>
+                        </div>
+                        <div class="card feature reveal">
+                            <i class="fas fa-headset"></i>
+                            <h3>دعم بعد التسليم</h3>
+                            <p>متابعة وتحديثات وحلول لأي مشكلة تقنية بعد إطلاق المشروع.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats reveal" style="margin-top:44px;">
+                    <div class="stat"><b data-count="5" data-suffix="+">+5</b><span>سنوات خبرة</span></div>
+                    <div class="stat"><b data-count="80" data-suffix="+">+80</b><span>مشروع منجز</span></div>
+                    <div class="stat"><b data-count="60" data-suffix="+">+60</b><span>عميل سعيد</span></div>
+                    <div class="stat"><b data-count="100" data-suffix="%">100%</b><span>التزام بالمواعيد</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROCESS ===== -->
+        <section class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">طريقة العمل</span>
+                    <h2>أربع خطوات واضحة نحو النتيجة</h2>
+                    <p>عملية منظمة تجعل مشروعك يسير بسلاسة من الفكرة إلى الإطلاق.</p>
+                </div>
+
+                <div class="process">
+                    <div class="card step reveal">
+                        <div class="step-num">01</div>
+                        <h3>الاستماع والفهم</h3>
+                        <p>نناقش فكرتك، أهدافك، وجمهورك المستهدف لنضع الأساس الصحيح.</p>
+                    </div>
+                    <div class="card step reveal">
+                        <div class="step-num">02</div>
+                        <h3>التخطيط والتصميم</h3>
+                        <p>أحوّل الفكرة إلى مخطط وهوية بصرية واضحة قبل بدء التنفيذ.</p>
+                    </div>
+                    <div class="card step reveal">
+                        <div class="step-num">03</div>
+                        <h3>التنفيذ والمراجعة</h3>
+                        <p>أطوّر المشروع وأشاركك النتائج لضمان أن كل تفصيل في مكانه.</p>
+                    </div>
+                    <div class="card step reveal">
+                        <div class="step-num">04</div>
+                        <h3>الإطلاق والدعم</h3>
+                        <p>نسلّم المشروع جاهزاً ونبقى معك للمتابعة والتحسين المستمر.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CTA ===== -->
+        <section class="section">
+            <div class="container">
+                <div class="cta-band reveal">
+                    <span class="eyebrow">جاهز للانطلاق؟</span>
+                    <h2>فكرتك تستحق حضوراً رقمياً يليق بها</h2>
+                    <p>أخبرني بمشروعك، وسأقترح عليك الحل الأنسب مع خطة واضحة للتنفيذ والوقت والتكلفة.</p>
+                    <div class="hero-actions">
+                        <a href="contact.html" class="btn btn-primary">تواصل معي الآن <i class="fas fa-arrow-left"></i></a>
+                        <a href="https://wa.me/212609236744" target="_blank" rel="noopener" class="btn btn-wa"><i class="fab fa-whatsapp"></i> واتساب مباشر</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo" aria-label="44">
+                        <span class="logo-mark">44</span>
+                        <span class="logo-text"><b>Youssef Kadaoui</b><i>Digital Creator</i></span>
+                    </a>
+                    <p>من الفكرة إلى الإطلاق: تصميم، برمجة، محتوى مرئي وحلول تقنية تحت سقف واحد.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/youssef__kadaoui" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:youssefelkadaoui981@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://wa.me/212609236744" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.tiktok.com/@kdyoussef88" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>روابط سريعة</h4>
+                    <div class="footer-links">
+                        <a href="index.html">الرئيسية</a>
+                        <a href="about.html">من أنا</a>
+                        <a href="services.html">الخدمات</a>
+                        <a href="portfolio.html">أعمالي</a>
+                        <a href="contact.html">تواصل معي</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>الخدمات</h4>
+                    <div class="footer-links">
+                        <a href="services.html#web">تطوير المواقع</a>
+                        <a href="services.html#design">التصميم الجرافيكي</a>
+                        <a href="services.html#video">المونتاج</a>
+                        <a href="services.html#tech">حلول تقنية</a>
+                        <a href="services.html#pricing">الباقات</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>تواصل معي</h4>
+                    <div class="footer-contact">
+                        <a href="mailto:youssefelkadaoui981@gmail.com"><i class="fas fa-envelope"></i><span dir="ltr">youssefelkadaoui981@gmail.com</span></a>
+                        <a href="https://wa.me/212609236744" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i><span dir="ltr">+212 609 236 744</span></a>
+                        <span><i class="fas fa-location-dot"></i> المغرب — متاح عن بُعد</span>
+                        <span><i class="fas fa-clock"></i> الرد عادة خلال 24 ساعة</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© <span data-year>2026</span> Youssef Kadaoui — <b>44</b>. جميع الحقوق محفوظة.</p>
+                <p>صُمم وطُوّر بشغف داخل <b>عالم 44 الرقمي</b></p>
+            </div>
+        </div>
+    </footer>
+
+    <a class="float-wa" href="https://wa.me/212609236744" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <button class="back-top" id="backTop" aria-label="العودة إلى الأعلى"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
